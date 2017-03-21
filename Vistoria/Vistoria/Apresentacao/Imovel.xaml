@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vistoria.Apresentacao.Imovel"
+             Title="Imovel">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="Código:"/>
+                <Entry x:Name="codigo" Placeholder="Ex: I501"/>
+                <Label Text="Tipo:"/>
+                <Entry x:Name="tipo" Placeholder="Ex: Casa"/>
+                <Label Text="Descrição:"/>
+                <Entry x:Name="descricao" Placeholder="Ex: Casa com 3qts 1suite etc.."/>
+                <Label Text="Endereço:"/>
+                <Entry x:Name="endereco" Placeholder="Ex: Rua X Qd 00 lt 25.."/>
+                <Label Text="CEP:"/>
+                <Entry x:Name="cep" Placeholder="Ex: Rua X Qd 00 lt 25.."/>
+                <Button Text="Gravar" Clicked="GravarImovel"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

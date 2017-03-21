@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vistoria.Apresentacao.Formulario"
+             Title="Formulário">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Código:"/>
+            <Entry x:Name="codigo" Placeholder="Ex: F501"/>
+            <Label Text="Formulário:"/>
+            <Entry x:Name="formulario" Placeholder="Ex: Nome formulário"/>
+            <Label Text="Tipo:"/>
+            <Entry x:Name="tipo" Placeholder="Ex: Nome formulário"/>
+            <Label Text="Descrição:"/>
+            <Entry x:Name="descricao" Placeholder="Ex: formulário utilizado para vistória de imovel..."/>
+            <Button Text="Gravar" Clicked="GravarFormulario"/>
+            <Button Text="Adicionar questões" Clicked="AdicionarQuestao"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

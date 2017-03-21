@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vistoria.Apresentacao.ListaImoveis"
+             Title="Lista de imoveis">
+    <ContentPage.Content>
+        <StackLayout Padding="25">
+            <!--string codigo, string tipo, string descricao, string endereco, string cep-->
+            <!--<Label Text="Imoveis"/>-->
+            <ListView x:Name="lvImoveis">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnAlterarClick" CommandParameter="{Binding .}" Text="Alterar"/>
+                                <MenuItem Clicked="OnRemoverClick" CommandParameter="{Binding .}" Text="Remover" IsDestructive="True"/>
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Codigo}" FontSize="12"/>
+                                        <Label Text="{Binding Descricao}" FontSize="12"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Tipo}" FontSize="10"/>
+                                        <Label Text="{Binding Endereco}" FontSize="10"/>
+                                        <Label Text="{Binding CEP}" FontSize="10"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

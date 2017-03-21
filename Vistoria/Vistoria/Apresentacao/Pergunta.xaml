@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vistoria.Apresentacao.Pergunta"
+             Title="Cadastro de perguntas">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label x:Name="perguntaId" IsVisible="False"/>
+            <Label Text="Código:"/>
+            <Entry x:Name="codigo" Placeholder="Ex: P501"/>
+            <Label Text="Pergunta:"/>
+            <Entry x:Name="pergunta" Placeholder="Ex: A pintura e nova?"/>
+            <Label Text="Resposta:"/>
+            <Entry x:Name="resposta" Placeholder="Ex: Sim/Não"/>
+            <Button Text="Gravar" Clicked="GravarPergunta"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

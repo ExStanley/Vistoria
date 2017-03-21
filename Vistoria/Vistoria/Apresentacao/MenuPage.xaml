@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vistoria.Apresentacao.MenuPage"
+             Title="Menu de Opções">
+    <StackLayout VerticalOptions="Center">
+        <Button Text="Imoveis"
+            StyleClass="Primary"
+            Image="Imoveis.png"
+            Clicked="ListaOnImoveisOnClicked"/>
+        <Button Text="Formulario de vistoria"
+            StyleClass="Success"
+            Image="Formulario.png"
+            Clicked="ListaFormularioOnClicked"/>
+    </StackLayout>
+</ContentPage>
